@@ -15,25 +15,18 @@ Console.Write("Введите третье число: ");
 int numberC = int.Parse(Console.ReadLine());
 
 int max = numberA;
-if(max > numberB)
-    {
-        max = numberA;
-    }
-else
-max = numberB;
-
-        if(max > numberC)
-            {
-                max = numberA;
-            }
-    else
-    max = numberC;
-
-if(max > numberC)
+if(numberB > max)
     {
         max = numberB;
     }
 else
-max = numberC;
+max = numberA;
+
+if(numberC > max)
+    {
+         max = numberC;
+    }
+                            
+                                       
 Console.WriteLine("max = " + max);
 
